@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="icoSPVenta.Module.BusinessObjects.CatClientes" IsDesigned="True" />
+  </BOModel>
+  <Views>
+    <DetailView Id="CatClientes_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CatClientes" RelativeSize="15.485074626865671">
+              <LayoutItem Id="Paterno" SizeConstraintsType="Default" RelativeSize="38.554216867469883" />
+              <LayoutItem Id="Materno" SizeConstraintsType="Default" RelativeSize="28.91566265060241" />
+              <LayoutItem Id="Nombre" SizeConstraintsType="Default" RelativeSize="32.53012048192771" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="84.514925373134332">
+              <LayoutItem Id="Oid" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

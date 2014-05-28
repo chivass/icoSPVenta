@@ -1,0 +1,8 @@
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\bin\Debug\icoSPVenta.Module.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\bin\Debug\icoSPVenta.Module.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\obj\Debug\icoSPVenta.Module.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\obj\Debug\icoSPVenta.Module.icoSPVentaModule.resources
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\obj\Debug\icoSPVenta.Module.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\obj\Debug\icoSPVenta.Module.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\obj\Debug\icoSPVenta.Module.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module\obj\Debug\icoSPVenta.Module.dll.licenses

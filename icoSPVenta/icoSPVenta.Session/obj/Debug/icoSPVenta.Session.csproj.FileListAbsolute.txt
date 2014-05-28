@@ -1,0 +1,7 @@
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\bin\Debug\icoSPVenta.Session.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\bin\Debug\icoSPVenta.Session.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\obj\Debug\icoSPVenta.Session.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\obj\Debug\icoSPVenta.Session.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\obj\Debug\icoSPVenta.Session.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\bin\Debug\icoSPVenta.Datos.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Session\bin\Debug\icoSPVenta.Datos.pdb

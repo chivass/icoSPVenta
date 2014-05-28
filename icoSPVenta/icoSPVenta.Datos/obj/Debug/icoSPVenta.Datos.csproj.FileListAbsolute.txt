@@ -1,0 +1,5 @@
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Datos\bin\Debug\icoSPVenta.Datos.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Datos\bin\Debug\icoSPVenta.Datos.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Datos\obj\Debug\icoSPVenta.Datos.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Datos\obj\Debug\icoSPVenta.Datos.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Datos\obj\Debug\icoSPVenta.Datos.pdb

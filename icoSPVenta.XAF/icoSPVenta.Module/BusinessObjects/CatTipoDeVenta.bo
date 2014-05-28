@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="icoSPVenta.Module.BusinessObjects.CatTipoDeVenta" IsDesigned="True" />
+  </BOModel>
+  <Views>
+    <DetailView Id="CatTipoDeVenta_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="XPObject" Index="0" RelativeSize="100">
+              <LayoutItem Id="Oid" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

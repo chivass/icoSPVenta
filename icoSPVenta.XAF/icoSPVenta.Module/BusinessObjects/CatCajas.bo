@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="icoSPVenta.Module.BusinessObjects.CatCajas" IsDesigned="True" />
+  </BOModel>
+  <Views>
+    <DetailView Id="CatCajas_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CatCajas" RelativeSize="6.5298507462686564">
+              <LayoutItem Id="DescripcionCaja" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="93.47014925373135">
+              <LayoutItem Id="Oid" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

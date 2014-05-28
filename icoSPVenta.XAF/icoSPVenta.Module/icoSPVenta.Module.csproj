@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>icoSPVenta.Module</RootNamespace>
+    <AssemblyName>icoSPVenta.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\CatCajas.bo.cs">
+      <DependentUpon>CatCajas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatCajas.bo.designer.cs">
+      <DependentUpon>CatCajas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatClientes.bo.cs">
+      <DependentUpon>CatClientes.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatClientes.bo.designer.cs">
+      <DependentUpon>CatClientes.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatDepartamento.bo.cs">
+      <DependentUpon>CatDepartamento.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatDepartamento.bo.designer.cs">
+      <DependentUpon>CatDepartamento.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatProductos.bo.cs">
+      <DependentUpon>CatProductos.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatProductos.bo.designer.cs">
+      <DependentUpon>CatProductos.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatTipoDeVenta.bo.cs">
+      <DependentUpon>CatTipoDeVenta.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatTipoDeVenta.bo.designer.cs">
+      <DependentUpon>CatTipoDeVenta.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatUnidadMedida.bo.cs">
+      <DependentUpon>CatUnidadMedida.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatUnidadMedida.bo.designer.cs">
+      <DependentUpon>CatUnidadMedida.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\DetalleVentas.bo.cs">
+      <DependentUpon>DetalleVentas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\DetalleVentas.bo.designer.cs">
+      <DependentUpon>DetalleVentas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\TempVentas.bo.cs">
+      <DependentUpon>TempVentas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\TempVentas.bo.designer.cs">
+      <DependentUpon>TempVentas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\Usuario.bo.cs">
+      <DependentUpon>Usuario.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\Usuario.bo.designer.cs">
+      <DependentUpon>Usuario.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\Ventas.bo.cs">
+      <DependentUpon>Ventas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\Ventas.bo.designer.cs">
+      <DependentUpon>Ventas.bo</DependentUpon>
+    </Compile>
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\Usuario.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatUnidadMedida.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatDepartamento.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatTipoDeVenta.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatCajas.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatClientes.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatProductos.bo" />
+    <EmbeddedResource Include="BusinessObjects\TempVentas.bo" />
+    <EmbeddedResource Include="BusinessObjects\Ventas.bo" />
+    <EmbeddedResource Include="BusinessObjects\DetalleVentas.bo" />
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\WinSample.ets" />
+    <None Include="Images\ReadMe.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FunctionalTests\Config.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

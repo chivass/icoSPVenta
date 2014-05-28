@@ -1,0 +1,41 @@
+
+#Logo {
+    display: block;
+    margin: 1em auto 0;
+    width: 75%;
+}
+        .Fecha{
+			float:left;
+			width: 10%;
+            min-width: 100px;
+		    }
+		
+		.Hora{
+		float:left;
+			width: 10%;
+            min-width: 100px;
+			
+		}
+		.Quirofano{
+			float:left;
+			width: 10%;
+            min-width: 100px;
+        
+            
+		}
+        .Cirujano{
+			float:left;
+			width: 20%;
+            min-width: 100px;
+			
+		}
+         .Duracion{
+			float:left;
+			width: 10%;
+            min-width: 100px;
+			
+		}
+       .errortext
+{
+    color:red;
+}
