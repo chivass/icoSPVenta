@@ -1,5 +1,4 @@
-﻿d
-
+﻿
 function ConvertirFecha(tdate) {
 
     var fecha = new Date(parseInt(tdate.substring(tdate.indexOf('(') + 1, tdate.indexOf(')'))))
