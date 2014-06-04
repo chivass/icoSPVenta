@@ -19,9 +19,9 @@ namespace icoSPVenta.Module.BusinessObjects
   [DefaultClassOptions]
   public partial class CatCajas : XPObject
   {
+    private icoSPVenta.Module.BusinessObjects.Usuario _oidUsuario;
     private System.Int32 _numeroCaja;
     private System.Boolean _ticket;
-    private System.String _nombreUsuario;
     private System.Boolean _disponible;
     private System.String _descripcionCaja;
     public CatCajas(DevExpress.Xpo.Session session)
@@ -61,15 +61,15 @@ namespace icoSPVenta.Module.BusinessObjects
         SetPropertyValue("Disponible", ref _disponible, value);
       }
     }
-    public System.String NombreUsuario
+    public icoSPVenta.Module.BusinessObjects.Usuario OidUsuario
     {
       get
       {
-        return _nombreUsuario;
+        return _oidUsuario;
       }
       set
       {
-        SetPropertyValue("NombreUsuario", ref _nombreUsuario, value);
+        SetPropertyValue("OidUsuario", ref _oidUsuario, value);
       }
     }
     public System.Boolean Ticket

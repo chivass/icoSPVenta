@@ -4,38 +4,98 @@
     margin: 1em auto 0;
     width: 75%;
 }
-        .Fecha{
-			float:left;
-			width: 10%;
-            min-width: 100px;
-		    }
-		
-		.Hora{
-		float:left;
-			width: 10%;
-            min-width: 100px;
-			
-		}
-		.Quirofano{
-			float:left;
-			width: 10%;
-            min-width: 100px;
-        
-            
-		}
-        .Cirujano{
-			float:left;
-			width: 20%;
-            min-width: 100px;
-			
-		}
-         .Duracion{
-			float:left;
-			width: 10%;
-            min-width: 100px;
-			
-		}
+
        .errortext
 {
     color:red;
+}
+ /* html */
+:-webkit-full-screen {
+  /*background: pink;*/
+}
+:-moz-full-screen {
+  /*background: pink;*/
+}
+ 
+/* otros elementos */
+:-webkit-full-screen video {
+  width: 100%;
+  height: 100%;
+}
+
+.controlgroup-textinput{
+		padding-top:.22em;
+		padding-bottom:.22em;
+		
+	}	
+		.ui-controlgroup-controls {
+			width: 100%;
+		}
+        
+		.ui-input-text /*ui-body-inherit ui-corner-all controlgroup-textinput ui-btn ui-shadow-inset ui-first-child*/{
+			width: 100%;
+		}
+        
+        .datoscliente{
+		float: right;
+		width:50%;
+	}
+         .datoscliente2{
+		float: right;
+		width:50%;
+	}
+.vCodigo {
+    float:left;
+    min-width: 130px;
+}
+.producto {
+    float:left;
+    width: 30%;
+    min-width: 140px;
+}
+.vcantidad {
+    float:left;
+    width: 30%;
+    min-width: 130px;
+}
+.vprecio {
+    float:left;
+    width: 10%;
+    min-width: 130px;
+}
+.vsubtotal {
+    float:left;
+    width: 10%;
+    min-width: 100px;
+}
+
+
+/*teclado*/
+    .ui-keyboard{padding: .3em; position: absolute; z-index: 16000;} 
+    .ui-keyboard-button{height: 2em; width: 2em; margin: .1em;} 
+    .ui-keyboard-actionkey{width: 4em;} 
+    .ui-keyboard-space{width: 15em;} 
+    .ui-keyboard-preview{width: 100%; text-align: left;} 
+
+    .accion {
+    position: absolute;
+top: .0em;
+
+font-weight: 700;
+right: .4em;
+}
+.tabletotal {
+    float: right;
+    width: 20%;
+    color: red;
+    font-size: 2em;
+    text-align:right;
+}
+.botoneliminar {
+     float:left;
+    width: 10%;
+    min-width: 100px;
+}
+.texto {
+    height: 40px;
 }

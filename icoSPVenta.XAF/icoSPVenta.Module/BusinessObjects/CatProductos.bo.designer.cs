@@ -19,9 +19,9 @@ namespace icoSPVenta.Module.BusinessObjects
   [DefaultClassOptions]
   public partial class CatProductos : XPObject
   {
+    private System.Decimal _iVA;
     private System.Int32 _codigoProducto;
     private System.Decimal _precioUnitarioMayoreo;
-    private System.Int32 _iVA;
     private System.Int32 _cantidadMinima;
     private icoSPVenta.Module.BusinessObjects.CatDepartamento _oidDepartamento;
     private System.Decimal _precioUnitarioVenta;
@@ -121,7 +121,7 @@ namespace icoSPVenta.Module.BusinessObjects
         SetPropertyValue("CantidadMinima", ref _cantidadMinima, value);
       }
     }
-    public System.Int32 IVA
+    public System.Decimal IVA
     {
       get
       {

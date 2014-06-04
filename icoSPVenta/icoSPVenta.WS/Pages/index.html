@@ -7,6 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css">
 <link rel="stylesheet" href="css/style.css">
+    
+     <link type="text/css" href="css/jquery.keypad.css" rel="stylesheet"> 
+   <link rel="stylesheet"  href="css/jqm-icon-pack-fa.css" />
+
 </head>
 <body>
 <div data-role="page" id="paghome">
@@ -14,7 +18,7 @@
   <div data-role="header">
     
     <a href="#paghome" data-role="button" data-icon="home"> <!--data-rel="dialog"-->Inicio</a>
-		<h1 class="hpage">== Nombre de usuario ==</h1>
+		<h1 class="negocio">== Nombre del negocio ==</h1>
     <a href="javascript:Salir();" data-role="button" data-icon="delete">Salir</a>
   
     <div data-role="navbar">
@@ -52,7 +56,165 @@
 </div>
 
 </div>  
+   
+    <div data-role="page" id="ventas">
+
+  <div data-role="header" data-theme="b">
     
+    <a href="#paghome" style="top: .64em;" data-role="button" data-icon="home"> <!--data-rel="dialog"-->Inicio</a>
+		<h1 class="folio">Folio : 1</h1>
+      <p class="cliente">Cliente : Publico General</p>
+	
+		 <div class="accion"> <select name="select-choice-11"  id="select-choice-11" data-theme="b" data-icon="gear"  data-native-menu="false" tabindex="-1">
+			<option>Acciones</option>
+            <option value="delete" >Cambiar cliente</option>
+			<option value="delete">Cancelar compra</option>
+             <option value="delete">Agregar nuevo producto</option>
+		</select>
+	</div>
+	
+
+
+ 
+
+
+  
+   
+  </div>
+
+     
+
+
+  <div data-role="content">
+    
+			
+		
+		<!--<!--<!--<div class="controlgrup2">
+     <!--       <div class="datoscliente2">   Direccion : Callejon 16 de septiembre y 1ra</div>
+             <div class="datoscliente">   Telefono : 6531146364</div>-->
+            
+            
+		<!--<div data-role="controlgroup" data-type="horizontal">
+			<input type="text" id="cliente" data-wrapper-class="controlgroup-textinput ui-btn" readonly placeholder="Seleccione cliente...">
+			<a href="javascript:();" data-role="button" data-icon="search" data-iconpos="notext" data-inline="true" data-ajax="false">Seleccionar</a>
+					
+		</div>-->
+           
+
+        <!--<div data-role="controlgroup" data-type="horizontal" >
+        <input type="text" id="Text1" data-wrapper-class="controlgroup-textinput ui-btn" readonly placeholder="Seleccione numero de caja...">
+			<a href="javascript:();" data-role="button" data-icon="search" data-iconpos="notext" data-inline="true" data-ajax="false">Seleccionar</a>
+     </div>
+    </div>-->
+
+
+
+
+      
+
+ 
+          
+          	<!--<div class="ui-block-a">
+				<h3><b>Folio: 1</b></h3>
+			</div>-->
+
+    
+    <div class="">
+       <b>Codigo del producto</b> 
+        
+				<div data-role="controlgroup" data-type="horizontal">
+			<input type="text" id="Text2" data-wrapper-class="controlgroup-textinput ui-btn">
+			<a href="javascript:();" data-role="button" data-icon="search" data-iconpos="notext" data-inline="true" data-ajax="false">Seleccionar</a>
+					
+		
+            </div>
+			</div>
+
+      <ul data-role="listview" data-inset="true" id="ventasdetalles">
+			<li data-icon="none" data-theme="b"><div class="vCodigo">Codigo</div><div class="producto">Articulo</div><div class="vcantidad">Cantidad</div><div class="vprecio">Precio</div><div class="vsubtotal">SubTotal</div></li>
+			
+          <li id="l1" data-theme="b" style="padding:.1em 1em;"><div class="vCodigo">10101010023</div><div class="producto">TOSTITOS VERDES </div><div class="vcantidad"><div style="float:left; min-width:20px; width:10%; font-size:10px;"><input type="text" id="txt1" /></div></div><div class="vprecio">$11.00</div><div class="vsubtotal">$22.00</div><div class="botoneliminar"><a href="" data-role="button" data-icon="delete" style="font-size:9px">Elminar</a></div></li>
+                    <li  id="l2" data-theme="a" style="padding:.1em 1em;"><div class="vCodigo">10101010023</div><div class="producto">TOSTITOS VERDES </div><div class="vcantidad"><div style="float:left; min-width:20px; width:10%; font-size:10px;"><input type="text" /></div></div><div class="vprecio">$11.00</div><div class="vsubtotal">$22.00</div><div class="botoneliminar"><a href="" data-role="button" data-icon="delete" style="font-size:9px">Elminar</a></div></li>
+                    <li  id="l3" data-theme="a" style="padding:.1em 1em;"><div class="vCodigo">10101010023</div><div class="producto">TOSTITOS VERDES </div><div class="vcantidad"><div style="float:left; min-width:20px; width:10%; font-size:10px;"><input type="text" /></div></div><div class="vprecio">$11.00</div><div class="vsubtotal">$22.00</div><div class="botoneliminar"><a href="" data-role="button" data-icon="delete" style="font-size:9px">Elminar</a></div></li>
+                    <li  id="l4" data-theme="a" style="padding:.1em 1em;"><div class="vCodigo">10101010023</div><div class="producto">TOSTITOS VERDES </div><div class="vcantidad"><div style="float:left; min-width:20px; width:10%; font-size:10px;"><input type="text" /></div></div><div class="vprecio">$11.00</div><div class="vsubtotal">$22.00</div><div class="botoneliminar"><a href="" data-role="button" data-icon="delete" style="font-size:9px">Elminar</a></div></li>
+
+      </ul>
+     	
+      
+      <div style="float:left;width:97.5%;">
+         <table class="tabletotal"> <tbody><tr><th style="color:black;">IVA: </th><th style="color:black;">$00.00</th><th></th></tr><tr><th>TOTAL: </th><th>$44.00</th><th><a href="javascript:AbrirVentanaPAgo();" data-role="button" data-icon="money" >Cobrar [F1]</a></th></tr></tbody>
+          
+         </table>
+      </div>
+     
+
+  </div>
+
+  <div data-role="footer" data-theme="b">
+    <p class="pie">Bienvenido : Usuario</p>
+  </div>
+
+
+</div>   
+
+
+
+
+<div data-role="page" id="pago">
+
+  <div data-role="header" data-theme="b">
+    
+   
+		<h1 class="folio">Folio : 1</h1>
+      <p class="cliente">Cliente : Publico General</p>
+	
+		 
+	
+
+
+ 
+
+
+  
+   
+  </div>
+
+     
+
+
+  <div data-role="content">
+   <select name="select-choice-11"  id="select1" data-theme="b" data-icon="gear"  data-native-menu="false" tabindex="-1">
+			<option>Seleccione tipo de pago</option>
+            <option value="delete" >Efectivo</option>
+			
+		</select>
+	
+	
+   
+        
+      
+          <label style="color:red; font-size:2em; text-align:center;">$44.00</label>
+
+       <input type="text" style="color:blue; font-size:2em; text-align:center;" name="nombre" placeholder="Recibo">
+            
+     <label style="color:blue; font-size:2em; text-align:center;">$22.00</label>
+      <a href="" id="" data-role="button" data-icon="check" data-inline="true" style="float:right;">Terminar venta</a>
+  </div>
+
+  <div data-role="footer" data-theme="b">
+    <p class="pie">Bienvenido : Usuario</p>
+  </div>
+
+
+</div> 
+
+
+
+
+
+
+
+
 
 
 
@@ -64,4 +226,10 @@
 <script src="js/jquery.mobile-1.4.0.min.js"></script>
        <script type="text/javascript" src="js/index.js"></script>
    <script type="text/javascript" src="js/cordova-2.1.0.js"></script>
+	
+	 
+    
+<script type="text/javascript" src="js/jquery.plugin.js"></script> 
+<script type="text/javascript" src="js/jquery.keypad.js"></script>
+
 </html>

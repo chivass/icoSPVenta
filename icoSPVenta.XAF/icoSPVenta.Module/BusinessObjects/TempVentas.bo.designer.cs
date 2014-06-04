@@ -19,35 +19,35 @@ namespace icoSPVenta.Module.BusinessObjects
   [DefaultClassOptions]
   public partial class TempVentas : XPObject
   {
+    private System.Decimal _iVA;
     private System.Decimal _precioUnitario;
-    private System.Int32 _iVA;
     private System.Int32 _cantidad;
-    private System.Int32 _codigoProducto;
-    private System.String _nombreUsuario;
+    private System.Int32 _oidProducto;
+    private System.String _oidUsuario;
     public TempVentas(DevExpress.Xpo.Session session)
       : base(session)
     {
     }
-    public System.Int32 CodigoProducto
+    public System.Int32 OidProducto
     {
       get
       {
-        return _codigoProducto;
+        return _oidProducto;
       }
       set
       {
-        SetPropertyValue("CodigoProducto", ref _codigoProducto, value);
+        SetPropertyValue("OidProducto", ref _oidProducto, value);
       }
     }
-    public System.String NombreUsuario
+    public System.String OidUsuario
     {
       get
       {
-        return _nombreUsuario;
+        return _oidUsuario;
       }
       set
       {
-        SetPropertyValue("NombreUsuario", ref _nombreUsuario, value);
+        SetPropertyValue("OidUsuario", ref _oidUsuario, value);
       }
     }
     public System.Int32 Cantidad
@@ -72,7 +72,7 @@ namespace icoSPVenta.Module.BusinessObjects
         SetPropertyValue("PrecioUnitario", ref _precioUnitario, value);
       }
     }
-    public System.Int32 IVA
+    public System.Decimal IVA
     {
       get
       {

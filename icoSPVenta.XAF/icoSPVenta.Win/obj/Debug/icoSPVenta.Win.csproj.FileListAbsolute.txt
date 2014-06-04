@@ -16,3 +16,15 @@ C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Win\obj\Debug\
 C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Win.exe.config
 C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.exe
 C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\Model.xafml
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Win.exe
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Win.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Module.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Module.Win.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Module.Win.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\bin\Debug\icoSPVenta.Module.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.icoSPVentaWindowsFormsApplication.resources
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Win\obj\Debug\icoSPVenta.Win.exe.licenses

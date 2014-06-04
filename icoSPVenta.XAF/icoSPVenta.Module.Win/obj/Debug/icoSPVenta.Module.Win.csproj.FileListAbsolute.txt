@@ -7,3 +7,12 @@ C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module.Win\obj
 C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.csproj.GenerateResource.Cache
 C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.dll
 C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\bin\Debug\icoSPVenta.Module.Win.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\bin\Debug\icoSPVenta.Module.Win.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\bin\Debug\icoSPVenta.Module.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\bin\Debug\icoSPVenta.Module.pdb
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.icoSPVentaWindowsFormsModule.resources
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.dll
+C:\Users\Carlos\Documents\GitHub\icoSPVenta\icoSPVenta.XAF\icoSPVenta.Module.Win\obj\Debug\icoSPVenta.Module.Win.pdb

@@ -113,6 +113,12 @@
     <Compile Include="BusinessObjects\CatTipoDeVenta.bo.designer.cs">
       <DependentUpon>CatTipoDeVenta.bo</DependentUpon>
     </Compile>
+    <Compile Include="BusinessObjects\CatTipoPago.bo.cs">
+      <DependentUpon>CatTipoPago.bo</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CatTipoPago.bo.designer.cs">
+      <DependentUpon>CatTipoPago.bo</DependentUpon>
+    </Compile>
     <Compile Include="BusinessObjects\CatUnidadMedida.bo.cs">
       <DependentUpon>CatUnidadMedida.bo</DependentUpon>
     </Compile>
@@ -171,6 +177,7 @@
     <EmbeddedResource Include="BusinessObjects\TempVentas.bo" />
     <EmbeddedResource Include="BusinessObjects\Ventas.bo" />
     <EmbeddedResource Include="BusinessObjects\DetalleVentas.bo" />
+    <EmbeddedResource Include="BusinessObjects\CatTipoPago.bo" />
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,9 @@ namespace icoSPVenta.Module.BusinessObjects
   [DefaultClassOptions]
   public partial class CatClientes : XPObject
   {
+    private System.Int32 _telefono;
+    private System.String _correoElectronico;
+    private System.String _direccion;
     private icoSPVenta.Module.BusinessObjects.CatTipoDeVenta _oidTipoDeVenta;
     private System.String _nombre;
     private System.String _materno;
@@ -26,6 +29,17 @@ namespace icoSPVenta.Module.BusinessObjects
     public CatClientes(DevExpress.Xpo.Session session)
       : base(session)
     {
+    }
+    public System.String Nombre
+    {
+      get
+      {
+        return _nombre;
+      }
+      set
+      {
+        SetPropertyValue("Nombre", ref _nombre, value);
+      }
     }
     public System.String Paterno
     {
@@ -49,15 +63,37 @@ namespace icoSPVenta.Module.BusinessObjects
         SetPropertyValue("Materno", ref _materno, value);
       }
     }
-    public System.String Nombre
+    public System.String Direccion
     {
       get
       {
-        return _nombre;
+        return _direccion;
       }
       set
       {
-        SetPropertyValue("Nombre", ref _nombre, value);
+        SetPropertyValue("Direccion", ref _direccion, value);
+      }
+    }
+    public System.Int32 Telefono
+    {
+      get
+      {
+        return _telefono;
+      }
+      set
+      {
+        SetPropertyValue("Telefono", ref _telefono, value);
+      }
+    }
+    public System.String CorreoElectronico
+    {
+      get
+      {
+        return _correoElectronico;
+      }
+      set
+      {
+        SetPropertyValue("CorreoElectronico", ref _correoElectronico, value);
       }
     }
     public icoSPVenta.Module.BusinessObjects.CatTipoDeVenta OidTipoDeVenta

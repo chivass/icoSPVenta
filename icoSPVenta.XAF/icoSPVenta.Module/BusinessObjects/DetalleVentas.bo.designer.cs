@@ -19,35 +19,35 @@ namespace icoSPVenta.Module.BusinessObjects
   [DefaultClassOptions]
   public partial class DetalleVentas : XPObject
   {
+    private icoSPVenta.Module.BusinessObjects.Ventas _oidVenta;
+    private System.Decimal _iVA;
+    private icoSPVenta.Module.BusinessObjects.CatProductos _oidProducto;
     private System.Decimal _precioUnitario;
-    private System.Int32 _iVA;
     private System.Int32 _cantidad;
-    private System.Int32 _folio;
-    private System.Int32 _codigoProducto;
     public DetalleVentas(DevExpress.Xpo.Session session)
       : base(session)
     {
     }
-    public System.Int32 CodigoProducto
+    public icoSPVenta.Module.BusinessObjects.Ventas OidVenta
     {
       get
       {
-        return _codigoProducto;
+        return _oidVenta;
       }
       set
       {
-        SetPropertyValue("CodigoProducto", ref _codigoProducto, value);
+        SetPropertyValue("OidVenta", ref _oidVenta, value);
       }
     }
-    public System.Int32 Folio
+    public icoSPVenta.Module.BusinessObjects.CatProductos OidProducto
     {
       get
       {
-        return _folio;
+        return _oidProducto;
       }
       set
       {
-        SetPropertyValue("Folio", ref _folio, value);
+        SetPropertyValue("OidProducto", ref _oidProducto, value);
       }
     }
     public System.Int32 Cantidad
@@ -72,7 +72,7 @@ namespace icoSPVenta.Module.BusinessObjects
         SetPropertyValue("PrecioUnitario", ref _precioUnitario, value);
       }
     }
-    public System.Int32 IVA
+    public System.Decimal IVA
     {
       get
       {
@@ -82,6 +82,19 @@ namespace icoSPVenta.Module.BusinessObjects
       {
         SetPropertyValue("IVA", ref _iVA, value);
       }
+    }
+
+    [DevExpress.Xpo.AssociationAttribute("Ventas-DetalleVentas")]
+    public icoSPVenta.Module.BusinessObjects.Ventas Venta
+    {
+        get
+        {
+            return _oidVenta;
+        }
+        set
+        {
+            SetPropertyValue("Ventas", ref _oidVenta, value);
+        }
     }
   }
 }

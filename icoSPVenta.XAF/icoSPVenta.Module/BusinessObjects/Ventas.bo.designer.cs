@@ -19,8 +19,9 @@ namespace icoSPVenta.Module.BusinessObjects
   [DefaultClassOptions]
   public partial class Ventas : XPObject
   {
+    private icoSPVenta.Module.BusinessObjects.CatTipoPago _oidTipoDePago;
+    private icoSPVenta.Module.BusinessObjects.Usuario _oidUsuario;
     private System.Decimal _total;
-    private System.String _nombreUsuario;
     private icoSPVenta.Module.BusinessObjects.CatClientes _cliente;
     private icoSPVenta.Module.BusinessObjects.CatCajas _caja;
     private System.DateTime _fecha;
@@ -51,15 +52,15 @@ namespace icoSPVenta.Module.BusinessObjects
         SetPropertyValue("Fecha", ref _fecha, value);
       }
     }
-    public System.String NombreUsuario
+    public icoSPVenta.Module.BusinessObjects.Usuario OidUsuario
     {
       get
       {
-        return _nombreUsuario;
+        return _oidUsuario;
       }
       set
       {
-        SetPropertyValue("NombreUsuario", ref _nombreUsuario, value);
+        SetPropertyValue("OidUsuario", ref _oidUsuario, value);
       }
     }
     public System.Decimal Total
@@ -93,6 +94,26 @@ namespace icoSPVenta.Module.BusinessObjects
       set
       {
         SetPropertyValue("Cliente", ref _cliente, value);
+      }
+    }
+    [DevExpress.Xpo.AssociationAttribute("Ventas-DetalleVentas"),
+    DevExpress.Xpo.Aggregated]
+    public XPCollection<icoSPVenta.Module.BusinessObjects.DetalleVentas> DetalleVenta
+    {
+      get
+      {
+        return GetCollection<icoSPVenta.Module.BusinessObjects.DetalleVentas>("DetalleVenta");
+      }
+    }
+    public icoSPVenta.Module.BusinessObjects.CatTipoPago OidTipoDePago
+    {
+      get
+      {
+        return _oidTipoDePago;
+      }
+      set
+      {
+        SetPropertyValue("OidTipoDePago", ref _oidTipoDePago, value);
       }
     }
   }
