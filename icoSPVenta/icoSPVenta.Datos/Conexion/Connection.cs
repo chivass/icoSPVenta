@@ -65,7 +65,48 @@ namespace icoSPVenta.Datos.Conexion
             }
             catch { }
         }
-     
+        public DataTable obtenerColeccionObjeto(Base obj)
+        {
+            SqlCommand cmd;
+            string sql = obj.CrearSqlObtenerColeccion();
+            DataTable dataTable = null;
+            try
+            {
+                cmd = new SqlCommand(sql, _SQLConn);
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+                dataTable = new DataTable();
+                dataTable.Load(dataReader);
+
+            }
+            catch
+            {
+                return null;
+            }
+            dataTable.TableName = obj.TableName();
+            return dataTable;
+        }
+        public DataTable obetenerObjeto(int OidObjeto, Base obj)
+        {
+            SqlCommand cmd;
+            string sql = obj.CrearSqlObtener(OidObjeto);
+            DataTable dataTable = null;
+            try
+            {
+                cmd = new SqlCommand(sql, _SQLConn);
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+                dataTable = new DataTable();
+                dataTable.Load(dataReader);
+
+            }
+            catch
+            {
+                return null;
+            }
+            dataTable.TableName = obj.TableName();
+            return dataTable;
+        }
 
 
       
@@ -86,6 +127,10 @@ namespace icoSPVenta.Datos.Conexion
 
 
 
-        
+
+
+
+
+       
     }
 }

@@ -18,6 +18,30 @@ namespace icoSPVenta.Session
           Base obj = System.Activator.CreateInstance(tipo, conn) as Base;
           conn.insertarObjeto(obj, CamposInsertar);
       }
+      private static string ObtenerColeccionObjeto(Type tipo)
+      {
+          Connection conn = new Connection(Session.CONNECTION_STRING);
+          Base obj = System.Activator.CreateInstance(tipo, conn) as Base;
+          DataTable table = conn.obtenerColeccionObjeto(obj);
+
+          string jTable = ToJSON(table);
+
+          conn.Close();
+
+          return jTable;
+      }
+      private static string ObetenerObjeto(int OidObjeto, Type type)
+      {
+          Connection conn = new Connection(Session.CONNECTION_STRING);
+          Base obj = System.Activator.CreateInstance(type, conn) as Base;
+          DataTable table = conn.obetenerObjeto(OidObjeto, obj);
+
+          string Objeto = ToJSON(table);
+
+          conn.Close();
+
+          return Objeto;
+      }
       public static int ValidarObjeto(Type tipo, string Valor)
       {
           Connection conn = new Connection(Session.CONNECTION_STRING);
@@ -60,7 +84,7 @@ namespace icoSPVenta.Session
 
 
 
-
+      #region Usuarios
       public static void InsertarUsuarios(string NombreUsuario, string ContrasenaUsuario, string Paterno, string Materno, string Nombre, bool Ventas, bool Administrar, bool Reportes, bool Catalogos, bool Consultas, bool DeshacerVenta)
       {
           List<Campos> CamposInsertar = new List<Campos>();
@@ -78,8 +102,21 @@ namespace icoSPVenta.Session
 
           InsertarObjeto(typeof(Usuario), CamposInsertar);
       }
+      public static string ObtenerUsuarios()
+      {
+          return ObtenerColeccionObjeto(typeof(Usuario));
+      }
+      public static string ObtenerUsuario(int OidUsuario)
+      {
+          return ObetenerObjeto(OidUsuario, typeof(Usuario));
+      }
 
+      
+    
 
+      #endregion
+
+      #region Cajas
       public static void InsertarCajas(int NumeroCaja, string Descripcion, bool Disponible, string NombreUsuario, bool Ticket)
       {
           List<Campos> CamposInsertar = new List<Campos>();
@@ -90,7 +127,17 @@ namespace icoSPVenta.Session
           CamposInsertar.Add(new Campos() { Campo = "Ticket", Valor = Ticket });
         
 
-          InsertarObjeto(typeof(Usuario), CamposInsertar);
+          InsertarObjeto(typeof(Caja), CamposInsertar);
       }
+      public static string ObtenerCajas()
+      {
+          return ObtenerColeccionObjeto(typeof(Caja));
+       }
+      #endregion
+
+
+
+
+     
     }
 }

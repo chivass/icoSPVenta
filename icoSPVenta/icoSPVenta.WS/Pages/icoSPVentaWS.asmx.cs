@@ -30,6 +30,24 @@ namespace icoSPVenta.WS.Pages
             return "1";
 
         }
+        [WebMethod(EnableSession = true)]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public string ObtenerUsuarios()
+        {
+
+            string Resultado = icoSPVenta.Session.Utilerias.ObtenerUsuarios();
+
+            return Resultado;
+        }
+        [WebMethod(EnableSession = true)]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public string ObtenerUsuario(int OidUsuario)
+        {
+
+            string Resultado = icoSPVenta.Session.Utilerias.ObtenerUsuario(OidUsuario);
+
+            return Resultado;
+        }
         #endregion
 
 
@@ -47,9 +65,18 @@ namespace icoSPVenta.WS.Pages
             return "1";
 
         }
+        [WebMethod(EnableSession = true)]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public string ObtenerCajas()
+        {
 
+            string Resultado = icoSPVenta.Session.Utilerias.ObtenerCajas();
+
+            return Resultado;
+        }
         #endregion
 
         //apurate perro 
+     
     }
 }

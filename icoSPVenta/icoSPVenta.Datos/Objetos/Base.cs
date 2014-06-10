@@ -58,7 +58,16 @@ namespace icoSPVenta.Datos.Objetos
 
             return sql;
         }
-
+        internal string CrearSqlObtenerColeccion()
+        {
+            Validate();
+            return string.Format("SELECT * FROM {0}", TableName());
+        }
+        internal string CrearSqlObtener(int OidObjeto)
+        {
+            Validate();
+            return string.Format("SELECT * FROM {0} WHERE OID = {1}", TableName(), OidObjeto);
+        }
         public string ToSQLValueFormat(object obj)
         {
             if (obj == null) return "null";
@@ -87,6 +96,10 @@ namespace icoSPVenta.Datos.Objetos
 
             return strFormat;
         }
+
+
+
+
 
 
 

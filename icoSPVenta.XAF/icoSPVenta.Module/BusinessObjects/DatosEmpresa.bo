@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="icoSPVenta.Module.BusinessObjects.DatosEmpresa" IsDesigned="True" />
+  </BOModel>
+  <Views>
+    <DetailView Id="DatosEmpresa_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="DatosEmpresa" RelativeSize="27.052238805970148">
+              <LayoutGroup Id="DatosEmpresa_col1" RelativeSize="48.35164835164835">
+                <LayoutItem Id="NombreEmpresa" SizeConstraintsType="Default" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="Direccion" SizeConstraintsType="Default" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Telefono" SizeConstraintsType="Default" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Ciudad" SizeConstraintsType="Default" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+              <LayoutGroup Id="DatosEmpresa_col2" RelativeSize="48.194662480376763">
+                <LayoutItem Id="Estado" SizeConstraintsType="Default" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="CodigoPostal" SizeConstraintsType="Default" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Colonia" SizeConstraintsType="Default" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="RFC" SizeConstraintsType="Default" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="72.947761194029852">
+              <LayoutItem Id="Oid" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

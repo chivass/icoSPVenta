@@ -12,7 +12,7 @@
    <link rel="stylesheet"  href="css/jqm-icon-pack-fa.css" />
 
 </head>
-<body>
+<body id="body">
 <div data-role="page" id="paghome">
 
   <div data-role="header">
@@ -45,8 +45,8 @@
 <ul data-role="listview" data-theme="b" class="nav-search">
   <h1>Catalogos</h1>  
             <li data-icon="delete"><a href="#" data-rel="close">Cerrar Menu</a></li>
-    <li><a href="#usuarios">Usuarios</a></li> 
-    <li><a href="#cajas">Cajas</a></li> 
+    <li><a href="javascript:CrearPaginaCatalogo('Usuarios');">Usuarios</a></li> 
+    <li><a href="javascript:CrearPaginaCatalogo('Cajas');">Cajas</a></li> 
     <li><a href="#clientes">Clientes</a></li> 
    <li><a href="#departamento">Departamentos</a></li>  
    <li><a href="#productos">Productos</a></li>    
@@ -211,9 +211,58 @@
 
 
 
+    <!--<div data-role="page" id="usuarios">
+
+  <div data-role="header" data-theme="b">
+    
+  
+  
+    <div data-role="navbar">
+      <ul>
+		<li><a href="#paghome" data-icon="home" data-iconpos="notext">Inicio</a></li>
+  
+        <li><a href="javascript:AbrirDetalleCatalogo();" data-icon="plus" data-ajax="false">Agregar</a></li>
+   
+      </ul>
+    </div>
+  </div>
+
+     
 
 
+  <div data-role="content">
+  <h1>Usuarios</h1>
+    <ul data-role="listview" id="ListaCatalogo" data-inset="true" data-filter="true" data-filter-placeholder="Busqueda...">
+	      </ul>
+	  
+  </div>
 
+  <div data-role="footer" data-theme="b">
+    <h1></h1>
+  </div>
+
+
+</div> --> 
+
+    
+<!--<div data-role="page" id="DetallesCatalogo">
+    <div data-role="header" data-theme="b">
+        <h1 class="TituloDetallesCatalogo">Usuarios</h1>
+        <div data-role="navbar">
+       <ul>
+		    <li><a href="#paghome" data-icon="home" data-iconpos="notext">Grabar</a></li>
+            <li><a href="javascript:CatalogoCancelar();" data-icon="plus" data-ajax="false">Cancelar</a></li>
+       </ul>
+    </div>
+  </div>
+
+  <div data-role="content" id="ContenidoDetalleCatalogo">
+    <h1 class="TituloDetallesCatalogo">Usuarios</h1> 
+  </div>
+  <div data-role="footer" data-theme="b">
+     <h1></h1>
+  </div>
+</div> --> 
 
 
 
